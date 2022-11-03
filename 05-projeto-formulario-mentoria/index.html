@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rectangle"></div>
+    <div class="container">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar sua mentoria</p>
+        </header>
+        <main>
+            <form action="" id="my-form" class="wrapper">
+
+                <!-- informações pessoais -->
+                <div class="personal-info">
+                    <h2>Informações Pessoais</h2>
+                    
+                    <!-- pessoa -->
+                    <div class="person">
+                        <label for="name">
+                            Nome
+                            <input id="name" type="text">
+                        </label>
+    
+                        <!-- sobrenome -->
+                        <label for="last-name">
+                            Sobrenome
+                            <input id="last-name" type="text" >
+                        </label>
+                    </div>
+                    <!-- nome -->
+
+                    <!-- email -->
+                    <label for="email">
+                        Email <span>(digite um email válido)</span>
+                        <input type="email" id="email">
+                    </label>
+
+                    <!-- senha -->
+                    <label for="password">
+                        Senha <span>(mínimo de 6 caracteres)</span>
+                        <input type="password" id="password" minlength="6">
+                    </label>
+                </div>
+
+                <!-- informações do mentor -->
+                <div class="mentor-info">
+                    <h2>Informações do Mentor</h2>
+                    <label for="mentor-name">
+                        Nome do mentor <span>(só o primeiro nome)</span>
+                        <input type="text" id="mentor-name">
+                    </label>
+                </div>
+
+                <!-- horários disponíveis -->
+                <div class="schedules">
+                    <h2>Seus Horários Disponíveis</h2>
+                    
+                    <!-- primeira mentoria -->
+                    <h3>Primeira Mentoria</h3>
+                    <div class="mentorship">
+                        <label for="date1">
+                            Data <span>(DD/MM/AAAA)</span>
+                            <input type="date" id="date1">
+                        </label>
+                        <label for="from1">
+                            Das
+                            <input type="time" id="from1">
+                        </label>
+                        <label for="to1">
+                            Até
+                            <input type="time" id="to1">
+                        </label>
+                    </div>
+
+                    <!-- segunda mentoria -->
+                    <h3>Segunda Mentoria</h3>
+                    <div class="mentorship">
+                        <label for="date1">
+                            Data <span>(DD/MM/AAAA)</span>
+                            <input type="date" id="date1">
+                        </label>
+                        <label for="from1">
+                            Das
+                            <input type="time" id="from1">
+                        </label>
+                        <label for="to1">
+                            Até
+                            <input type="time" id="to1">
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <input type="submit" value="Salvar" form="my-form">
+        </footer>
+    </div>
+</body>
+</html>
