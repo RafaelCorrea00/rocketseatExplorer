@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --dark-blue: #293241;
+    --light-blue: #BFD7E4;
+    --red: #F67669;
+    --white: #FFFFFF;
+    --grey1: #FAFAFC;
+    --grey2: #E6E6F0;
+    --grey3: #C1BCCC;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: var(--light-blue);
+}
+
+.rectangle {
+    height: 465px;
+    width: 100%;
+    
+    background: var(--dark-blue);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 750px;
+
+    margin-bottom: 392px;
+}
+
+/* Cabeçalho */
+.container header {
+    text-align: center;
+    color: var(--white);
+    margin-top: 107px;
+}
+
+.container header h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.container header p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container header img {
+    margin: 23.5px 0;
+}
+
+.container header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 135px;
+
+    border-radius: 20px 20px 0 0;
+
+    background: var(--red);
+}
+
+/* Formulário */
+/* informações Pessoais */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 64px 64px;
+    
+    background: var(--white);
+
+    border-radius: 0 0 20px 20px;
+}
+
+.wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wrapper span {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--grey3);
+}
+
+.wrapper input {
+    width: 100%;
+    height: 56px;
+
+    background: var(--grey1);
+    border: 1px solid var(--grey2);
+    border-radius: 8px;
+    
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+.wrapper .personal-info {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.wrapper .personal-info .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+
+    margin-bottom: 16px;
+}
+
+.wrapper .personal-info .person input {
+    width: 300px;
+}
+
+/* Informações do Mentor */
+.wrapper .mentor-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 100%;
+
+    margin: 30px 0;
+}
+
+.wrapper h3 {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid var(--grey2);
+    color: var(--dark-blue);
+}
+
+.wrapper .mentor-info select {
+    width: 300px;
+    height: 56px;
+
+    background: var(--grey1);
+    border: 1px solid var(--grey2);
+    border-radius: 8px;
+
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+.wrapper .mentor-info textarea {
+    width: 600px;
+    height: 167px;
+
+    background: var(--grey1);
+    border: 1px solid var(--grey2);
+    border-radius: 8px;
+
+    margin-top: 8px;
+    padding: 25px;
+}
+
+.wrapper .mentor-info input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+}
+
+.wrapper .mentor-info .issues {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+/* Agendando Próxima Mentoria */
+.wrapper .schedules {
+    width: 100%;
+}
+
+.wrapper .schedules .date-time {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 30px;
+}
+
+.wrapper input[type="submit"] {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 26px;
+
+    background: var(--red);
+    color: var(--white);
+
+    margin-top: 64px;
+
+    cursor: pointer;
+}
+
+.wrapper input[type="submit"]:hover {
+    background: #963328;
+    transition: all 0.3s ease;
+}

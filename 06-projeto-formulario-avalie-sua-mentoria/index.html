@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie sua Mentoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rectangle"></div>
+    <div class="container">
+        <header>
+            <h1>Avalie a sua Mentoria</h1>
+            <p>Chegou a hora de avaliar seu mentor. Bora lá?</p>
+            <img src="img1.svg" alt="">
+            <h2>Informações Pessoais</h2>
+        </header>
+        <main>
+            <form action="" id="my-form" class="wrapper">
+                
+                <!-- informações pessoais -->
+                <div class="personal-info">
+
+                    <!-- pessoa -->
+                    <div class="person">
+                        <!-- nome -->
+                        <label for="name">
+                            Nome
+                            <input type="text" id="name">
+                        </label>
+    
+                        <!-- sobrenome -->
+                        <label for="last-name">
+                            Sobrenome
+                            <input type="text" id="last-name">
+                        </label>
+                    </div>
+
+                    <!-- email -->
+                    <label for="email">
+                        Email <span>(digite um email válido)</span>
+                        <input type="email" id="email">
+                    </label>
+                </div>
+
+                <!-- informações do mentor -->
+                <div class="mentor-info">
+                    <h3>Informações do Mentor</h3>
+
+                    <!-- selecione o mentor -->
+                    <label for="select-mentor">
+                        Selecione quem foi seu mentor <br>
+                        <select id="select-mentor">
+                            <option value="dennis-ritchie">Dennis Ritchie</option>
+                            <option value="ada-lovelace">Ada Lovelace</option>
+                            <option value="tim-berners-lee">Tim Berners-Lee</option>
+                            <option value="margaret-hamilton">Margaret Hamilton</option>
+                            <option value="alan-turing">Alan Turing</option>
+                            <option value="gracie-hopper">Gracie Hopper</option>
+                            <option value="linus-torvalds">Linus Torvalds</option>
+                            <option value="jean-bartik">Jean Bartik</option>
+                        </select>
+                    </label>
+
+                    <!-- feedback sobre o mentor -->
+                    <label for="feedback">
+                        Feedback sobre o mentor <br>
+                        <textarea id="feedback"></textarea>
+                    </label>
+
+                    <!-- dúvidas esclarecidas -->
+                    <label for="issues" class="issues">
+                        <input type="checkbox" id="issues" checked>
+                        Todas as minhas dúvidas foram esclarecidas durante a mentoria
+                    </label>
+                </div>
+
+                <!-- agendamento -->
+                <div class="schedules">
+                    <h3>Agendando Próxima Mentoria</h3>
+
+                    <div class="date-time">
+                        <!-- data -->
+                        <label for="date">
+                            Data <span>(DD/MM/AAAA)</span>
+                            <input type="date" name="" id="">
+                        </label>
+    
+                        <!-- horario inicial -->
+                        <label for="from">
+                            Das
+                            <input type="time" id="from">
+                        </label>
+    
+                        <!-- horario final -->
+                        <label for="to">
+                            Até
+                            <input type="time" id="to">
+                        </label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Salvar">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
