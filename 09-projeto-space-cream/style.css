@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Roboto&family=Staatliches&display=swap');
 
 * {
     margin: 0;
@@ -28,7 +28,10 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+}
+
+._desktop {
+    display: none;
 }
 
 /* Cabeçalho */
@@ -127,3 +130,109 @@ body {
 }
 
 /* Responsividade */
+@media (min-width: 1024px) {
+    body {
+        overflow-x: auto;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .container header {
+        width: 37.7rem;
+        height: 100vh;
+    }
+
+    .container header img {
+        width: 21.4rem;
+        height: 21.4rem;
+    }
+
+    .container header h1 {
+        font-size: 4.8rem;
+    }
+
+    .container header p {
+        display: flex;
+        align-items: center;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 3.2rem 3rem 12.5rem;
+
+        color: var(--color05);
+
+        text-align: center;
+        text-transform: none;
+    }
+
+    /* ----------------------- */
+
+    .container main {
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+    }
+
+    .container main .content {
+        width: 100%;
+        display: grid;
+        gap: 3.2rem;
+        justify-content: center;
+        grid-template-areas:
+        "A B C"
+        "D B F"
+        "D E F";
+    }
+
+    #card-img1{
+        grid-area: A;
+    }
+    #card-img2{
+        grid-area: B;
+    }
+    #card-img3{
+        grid-area: E;
+    }
+    #card-img4{
+        grid-area: D;
+    }
+    #card-img5{
+        grid-area: C;
+    }
+    #card-img6{
+        grid-area: F;
+    }
+
+    .container main .content .card{
+        width: 22rem;
+    }    
+
+    .container main .content .card img {
+        width: 22rem;
+    }
+
+    .container main .content p, span {
+        display: none;
+    }
+
+    .container main p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        text-transform: none;
+        color: #4A4E69;
+    }
+    
+    .container main p a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    ._desktop {
+        display: initial;
+    }
+}
