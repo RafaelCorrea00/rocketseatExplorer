@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121214;
+
+    --base-color: 194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+    
+    --text-color: #FFFFFF;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: 'Roboto', sans-serif;
+
+    display: grid;
+    min-height: 100vh;
+}
+
+main { /* alinhando no centro */
+    align-self: flex-end;
+    justify-self: center;
+}
+
+button {
+    background-color: transparent; /* remove a cor de fundo dos botões */
+    border: none;
+
+    cursor: pointer;
+}
+
+.hide { /* para esconder os botões durante a aplicação */
+    display: none;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path { /* colorindo o svg */
+    fill: var(--primary-color);
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem+ 12vw, 6.4rem); /* min, ideal, max */
+}
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem); /* min, ideal, max */
+
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+#controls {
+    background-color: var(--bg-primary-light);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    border-radius: 9999px; /* border estilo pill */
+
+    width: clamp(10rem, 10rem + 30vw, 22.8rem); /* min, ideal, max */
+    height: clamp(8rem, 5rem + 10vw, 10.8rem); /* min, ideal, max */
+}
+
+footer { /* alinhando no canto inferior direito */
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding: 0 4rem 3.2rem 0;
+}
