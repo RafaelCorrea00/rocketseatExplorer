@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+:root {
+    --primary-color: #323238;
+    --second-color: #FFFFFF;
+    --bg-btn-active: #02799D;
+    --bg-btn: #E1E1E6;
+    
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+input[type='range'] {
+    filter: grayscale();
+    width: 9rem;
+}
+
+.toggle {
+    width: 4rem;
+    height: 4rem;
+    background-image: url('./assets/images/light-mode.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    cursor: pointer;
+}
+
+.sounds .card .active {
+    background-color: var(--bg-btn-active);
+    color: var(--second-color);
+    transition: background-color 0.7s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+/* TIMER */
+.timer .time span {
+    font-size: 12.6rem;
+}
+
+.timer .buttons {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4.8rem;
+}
+
+.timer .buttons button {
+    background: transparent;
+    border: none;
+}
+
+/* SOUNDS */
+.sounds {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas: 
+    "A B"
+    "C D";
+}
+
+.sounds .card button {
+    width: 13.8rem;
+    height: 15.2rem;
+
+    border: none;
+    border-radius: 2.4rem;
+    background-color:#E1E1E6;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 835px) {
+    .container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}

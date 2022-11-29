@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer v.2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="toggle"></div>
+
+    <div class="container">
+
+        <!-- TIMER -->
+        <div class="timer">
+            <div class="time">
+                <span id="minutesDisplay">25</span>
+                <span>:</span>
+                <span id="secondsDisplay">00</span>
+            </div>
+            <div class="buttons">
+                <button id="playTimer">
+                    <img src="./assets/images/play-btn.svg" alt="Botão Play" title="Iniciar">
+                </button>
+                <button id="stopTimer">
+                    <img src="./assets/images/stop-btn.svg" alt="Botão Stop" title="Zerar">
+                </button>
+                <button id="increase5Minutes">
+                    <img src="./assets/images/plus-btn.svg" alt="Botão Aumentar 5 Minutos" title="Aumentar 5 Minutos">
+                </button>
+                <button id="decrease5Minutes">
+                    <img src="./assets/images/minus-btn.svg" alt="Botão Diminuir 5 Minutos" title="Diminuir 5 Minutos">
+                </button>
+            </div>
+        </div>
+
+        <!-- SOUNDS -->
+        <div class="sounds">
+            <div class="card">
+                <button>
+                    <img src="./assets/images/forest-icon.svg" alt="Ícone de uma Árvore" title="Som de Floresta">
+                    <audio id="forestVolume" loop src="./assets/audios/Floresta.wav"></audio>
+                    <input type="range" id="forestVolumeRange" min="0" max="10">
+                </button>
+            </div>
+            <div class="card">
+                <button>
+                    <img src="./assets/images/rain-icon.svg" alt="Ícone de uma Núvem de Chuva" title="Som de Chuva">
+                    <audio id="rainVolume" loop src="./assets/audios/Chuva.wav"></audio>
+                    <input type="range" id="rainVolumeRange" min="0" max="10">
+                </button>
+            </div>
+            <div class="card">
+                <button>
+                    <img src="./assets/images/coffeeshop-icon.svg" alt="Ícone de uma Cafeteria" title="Som de Cafeteria">
+                    <audio id="coffeeshopVolume" loop src="./assets/audios/Cafeteria.wav"></audio>
+                    <input type="range" id="coffeeshopVolumeRange" min="0" max="10">
+                </button>
+            </div>
+            <div class="card">
+                <button>
+                    <img src="./assets/images/fireplace-icon.svg" alt="Ícone do Fogo de uma Lareira" title="Som de Lareira">
+                    <audio id="fireplaceVolume" loop src="./assets/audios/Lareira.wav"></audio>
+                    <input type="range" id="fireplaceVolumeRange" min="0" max="10">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
