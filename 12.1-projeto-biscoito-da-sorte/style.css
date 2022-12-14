@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    background-repeat: no-repeat;
+}
+
+.home {
+    width: 42.8rem;
+    height: 42.4rem;
+    background: #FFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    color: #34355B;
+}
+
+.home h3 {
+    width: 258px;
+    margin: auto;
+    padding-top: 4.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.home p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1.4rem 0 2rem;
+}
+
+.home img {
+    cursor: pointer;
+}
+
+.home img:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+
+/* ***************************************************************** */
+.luck {
+    width: 42.8rem;
+    height: 56.4rem;
+    background: #FFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.luck h3 {
+    width: 297px;
+    margin: auto;
+    padding-top: 4.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #34355B;
+}
+
+.luck .luckSentence {
+    width: 29.3rem;
+    height: 10.7rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    margin: 2.7rem auto;
+    padding: 1rem;
+
+    animation: showSentence 2s;
+}
+
+@keyframes showSentence {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.luck .luckSentence p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+}
+
+.luck img {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    margin: 1.7rem auto;
+}
+
+.luck button {
+    width: 17.4rem;
+    height: 5.2rem;
+    margin-bottom: 4.8rem;
+    background: #FF9500;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.luck button:hover {
+    background: #ae6600;
+    text-shadow: none;
+}
+
+.hide {
+    display: none;
+}
