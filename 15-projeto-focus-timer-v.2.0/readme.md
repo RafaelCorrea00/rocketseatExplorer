@@ -1,5 +1,6 @@
 # Projeto 15 - FocusTimer - Versão 2.0
 
+- Décimo quinto projeto desenvolvido no Curso Explorer da Rocketseat
 - Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente. Os sons são, respectivamente: floresta, chuva, cafeteria e lareira
     - O volume de cada som pode ser controlado pelo slider que se encontra no card embaixo do ícone
 
