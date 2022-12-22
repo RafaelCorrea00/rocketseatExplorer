@@ -1,0 +1,50 @@
+.container {
+    background-image: url('../assets/mountains-universe-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu a:nth-child(2) {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    height: 80%;
+}
+
+#app h1 {
+    font-size: 4.8rem;
+    color: #E1E1E6;
+}
+
+#app button {
+    padding: 1.2rem 3.2rem;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+}
+
+#app button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+}
+
+@media (max-width: 425px) {
+    #app {
+        height: max-content;
+    }
+
+    #app h1 {
+        font-size: 3.8rem;
+    }
+
+}
